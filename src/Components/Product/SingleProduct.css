@@ -1,0 +1,111 @@
+.product-container{
+    width: 100%;
+    height: 100vh;
+    object-fit: contain;
+    padding: 10px;
+}
+.product-container .main-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+.main-container .product-img{
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.main-container .product-img .img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.main-container .product-img .img img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.main-container .product-main{
+    width: 100%;
+    height: auto;
+}
+.main-container .product-main .items{
+    width: 100%;
+    height: auto;
+}
+.main-container .product-main .product-carousel{
+    width: 600px;
+    height: auto;
+}
+.main-container .product-main .product-carousel .items img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 20px;
+}
+.main-container .product-main .product-carousel .items img:hover{
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.main-container .product-detail .btn{
+    gap: 10px;
+    display: flex;
+    padding: 10px;
+}
+.main-container .product-detail .btn button{
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+}
+.main-container .product-detail .btn .seller{
+    background-color: aqua;
+}
+.main-container .product-detail .btn .clear{
+    background-color: yellow;
+}
+.main-container .product-detail p a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+.main-container .product-detail p a:hover{
+    text-decoration: underline;
+}
+.main-container .product-detail h3{
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 400;
+}
+.main-container .product-detail .ratings{
+    padding: 10px;
+}
+.main-container .product-detail .ratings a{
+    color: black;
+    padding-left: 20px;
+}
+.main-container .product-detail .ratings a:hover{
+    text-decoration: none;
+}
+.main-container .product-detail .return{
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    align-items: center;
+}
+.main-container .product-detail .price{
+    padding: 10px;
+}
+.main-container .product-detail h1{
+    color: green;
+}
+.main-container .product-detail .price button{
+    padding: 3px;
+    border: none;
+    color: green;
+}
+.main-container .product-detail .price p{
+    padding-top: 10px;
+}

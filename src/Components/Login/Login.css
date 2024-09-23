@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.Login-main{
+    width: 100%; 
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.Login-main .contain{
+    text-align: center;
+}
+.Login-main .form{
+    line-height: 10px;
+}
+.Login-main form input{
+    height: 60px;
+    width: 400px;
+    padding: 10px;
+    font-size: 25px;
+}
+.Login-main .form button{
+    height: 40px;
+    width: 400px;
+    margin-top: 10px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+}
+.Login-main .form button:hover{
+    background-color: #154878;
+}
+.Login-main .contain02{
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    width: 400px;
+}
+.Login-main .contain02 a{
+    color: black;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+}
+footer .foot1{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+footer .foot1 p{
+    opacity: 0.9;
+    font-size: 12px;
+}
+footer .foot1 .Policys ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    gap: 20px;
+    font-size: 12px;
+}
+footer .foot1 .Policys ul li a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.8;
+}
+footer .foot2 p{
+    float: right;
+    padding-right: 20px;
+    font-size: 14px;
+    opacity: 0.9;
+}

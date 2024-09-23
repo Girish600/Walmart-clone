@@ -1,0 +1,666 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+}
+.main img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+}
+.main .container1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.main .container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 10px;
+}
+.main .container1 a{
+    text-decoration: none;
+    color: black;
+    
+}
+.main .container1 a:hover{
+    text-decoration: underline;
+}
+.main .container2 a{
+    text-decoration: none;
+    color: black;
+}
+.main .container2 a:hover{
+    text-decoration: underline;
+}
+.main .container2 .contain-02{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.main .container2 .contain-02 img{
+    object-fit: contain;
+}
+.main .container3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.main .container3 a{
+    text-decoration: none;
+    color: black;
+}
+.main .container3 a:hover{
+    text-decoration: underline;
+}
+.main .container1 .item1 .item-content{
+    position: absolute;
+    top: 160px;
+    left: 20px;
+}
+.main .container1 .item2 .item-content{
+    position: absolute;
+    top: 380px;
+    left: 20px;
+}
+.main .container1 .item3 .item-content{
+    position: absolute;
+    top: 900px;
+    left: 20px;
+}
+.main .container2 .contain-02 .contain1 .item-content{
+    position: absolute;
+    top: 550px;
+    left: 28%;
+}
+.main .container2 .contain-02 .contain2 .item-content{
+    position: absolute;
+    top: 550px;
+    left: 53%;
+}
+.main .container2 .item3 .item-content{
+    position: absolute;
+    top: 900px;
+    left: 28%;
+}
+.main .container3 .item1 .item-content{
+    position: absolute;
+    top: 160px;
+    right: 100px;
+}
+.main .container3 .item2 .item-content{
+    position: absolute;
+    top: 350px;
+    right: 120px;
+}
+.main .container3 .item3 .item-content{
+    position: absolute;
+    top: 600px;
+    right: 140px;
+}
+.deals{
+    display: flex;
+    flex-direction: column;
+}
+.deals .flashDeals{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.deals .flashDeals a{
+    color: black;
+}
+.carousel01{
+    padding: 10px;
+}
+.carousel01 .items .description a{
+    color: black;
+    text-decoration: none;
+}
+.carousel01 .items button{
+    border: 1px solid black;
+    background: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+.carousel01 .items button:hover{
+    border: 2px solid black;
+}
+.customHr{
+    margin: 10px 20px;
+    opacity: 0.5;
+}
+.main02{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+    justify-content: space-between;
+}
+.main02 img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    position: relative;
+}
+.main02 .container01{
+    position: relative;
+}
+.main02 .container02{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-between;
+}
+.main02 .container02 .Items{
+    display: flex;
+    gap: 10px;
+}
+.main02 .container01 a{
+    color: black;
+}
+.main02 .container01 .item-content{
+    position: absolute;
+    z-index: 10;
+    top: 6%;
+    left: 5%;
+}
+.main02 .container01 .item-content button{
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 12px;
+    background-color: #fff;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+.main02 .container01 .item-content button:hover{
+    border: 2px solid black;
+}
+.main02 .container01 .item-content p{
+    font-size: 20px;
+    line-height: 20px;
+}
+.main02 .container01 .item-content h1{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 5px;
+}
+.main02 .container02 .item .item-content{
+    position: absolute;
+    z-index: 10;
+    top: 6%;
+    left: 5%;
+}
+.main02 .container02 a{
+    color: white;
+}
+.main02 .container02 a:hover{
+    text-decoration: none;
+}
+.main02 .container02 .Items .item-content{
+    position: relative;
+}
+.main02 .container02 .Items .contain1 .item-content{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 3%;
+}
+.main02 .container02 .Items .contain2 .item-content{
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 53%;    
+}
+.main02 .container03{
+    position: relative;
+}
+.main02 .container03 .item-content{
+    position: absolute;
+    z-index: 10;
+    top: 6%;
+    left: 5%;
+}
+.main02 .container03 a{
+    color: black;
+}
+.main02 .container03 a:hover{
+    text-decoration: none;
+}
+.main02 .container03 .item-content h1{
+    font-size: 20px;
+    font-weight: 400;
+}
+.horrorToy .Toys{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.react-multiple-carousel__arrow--right {
+    right: calc(4% + 1px);
+    z-index: 0 !important;
+}
+.react-multiple-carousel__arrow--left {
+    left: calc(4% + 1px);
+    z-index: 0 !important;
+}
+.carousel02{
+    padding: 10px;
+}
+.carousel02 .items .description a{
+    color: black;
+    text-decoration: none;
+}
+.carousel02 .items button{
+    border: 1px solid black;
+    background: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.carousel02 .items button:hover{
+    border: 2px solid black;
+}
+.main03{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    padding: 10px;
+}
+.main03 .half-image{
+    width: 50%;
+    position: relative;
+}
+.main03 .half-image .item-content{
+    position: absolute;
+    top: 6%;
+    left: 30px;
+}
+.main03 .half-image .item-content p{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 20px;
+}
+.main03 .half-image .item-content h1{
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin: 10px 0px;
+}
+.main03 .half-image .item-content button{
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-weight: 200;
+}
+.main03 .half-image .item-content button:hover{
+    cursor: pointer;
+    border: 2px solid black;
+}
+.main03 .half-image .img03 img{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+}
+.main03 .Crokery{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.main03  .Crokery .half-carousel .flashDeals{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.main03  .Crokery .half-carousel .flashDeals a{
+    color: black;
+}
+.main03  .Crokery .half-carousel .carousel03{
+    padding: 10px;
+}
+.main03 .Crokery .half-carousel .carousel03 .items button{
+    border: 1px solid black;
+    background: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+.main03 .Crokery .half-carousel .carousel03 .items button:hover{
+    border: 2px solid black;
+}
+.main04 .Items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.main04 .Items a{
+    color: black;
+}
+.main04 .carousel04{
+    padding: 15px;
+}
+.main04 .carousel04 .items{
+    text-align: center;
+}
+.main05 .carousel05{
+    padding: 10px;
+}
+.main05 .carousel05 .items{
+    border: 0.5px solid black;
+    border-radius: 10px;
+    margin: 10px;
+}
+.main05 .carousel05 .items .price{
+    padding: 10px;
+}
+.main05 .carousel05 .items .video .videos{
+    border-radius: 10px 10px 0px 0px;
+}
+.main06{
+    padding: 10px;
+}
+.main06 .entertainment{
+    padding-bottom: 15px;
+}
+.main06 .carousel06 .items .item-detail button{
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.main06 .carousel06 .items .item-detail button:hover{
+    border: 2px solid black;
+    cursor: pointer;
+}
+.main06 .carousel06 .items .item-detail h4{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.main06 .carousel06 .items .item-detail p{
+    padding-bottom: 10px;
+}
+.main07{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.main07 .socials{
+    margin-bottom: 15px;
+}
+.main07 .carousel07 .items {
+    width: 100%;
+    padding: 10px;
+}
+.main07 .carousel07 .items img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+}
+.main08{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+    justify-content: space-between;
+}
+.main08 img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    position: relative;
+}
+.main08 .container01{
+    position: relative;
+}
+.main08 .container02{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-between;
+}
+.main08 .container02 .Items{
+    display: flex;
+    gap: 10px;
+}
+.main08 .container01 a{
+    color: black;
+}
+.main08 .container01 .item-content{
+    position: absolute;
+    z-index: 10;
+    top: 6%;
+    left: 5%;
+}
+.main08 .container01 .item-content button{
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 12px;
+    background-color: #fff;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+.main08 .container01 .item-content button:hover{
+    border: 2px solid black;
+}
+.main08 .container01 .item-content p{
+    font-size: 20px;
+    line-height: 20px;
+}
+.main08 .container01 .item-content h1{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 5px;
+}
+.main08 .container02 .item .item-content{
+    position: absolute;
+    z-index: 10;
+    top: 6%;
+    left: 5%;
+}
+.main08 .container02 a{
+    color: black;
+}
+.main08 .container02 a:hover{
+    text-decoration: none;
+}
+.main08 .container02 .Items .item-content{
+    position: relative;
+}
+.main08 .container02 .Items .contain1 .item-content{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 3%;
+}
+.main08 .container02 .Items .contain2 .item-content{
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 53%;    
+}
+.main08 .container03{
+    position: relative;
+}
+.main08 .container03 .item-content{
+    position: absolute;
+    z-index: 10;
+    top: 6%;
+    left: 5%;
+}
+.main08 .container03 a{
+    color: white;
+}
+.main08 .container03 a:hover{
+    text-decoration: none;
+}
+.main08 .container03 .item-content h1{
+    font-size: 30px;
+    font-weight: 400;
+}
+.main09{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+.main09 .carousel09 .items .item-detail button{
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.main09 .carousel09 .items .item-detail button:hover{
+    border: 2px solid black;
+    cursor: pointer;
+}
+.main09 .carousel09 .items .item-detail h4{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.main09 .carousel09 .items .item-detail p{
+    padding-bottom: 10px;
+}
+.main10{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+    justify-content: space-between;
+}
+.main10 img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    position: relative;
+}
+.main10 .container01{
+    position: relative;
+}
+.main10 .container02{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-between;
+}
+.main10 .container02 .Items{
+    display: flex;
+    gap: 10px;
+}
+.main10 .container01 a{
+    color: black;
+}
+.main10 .container01 .item-content{
+    position: absolute;
+    z-index: 10;
+    top: 6%;
+    left: 5%;
+}
+.main10 .container01 .item-content button{
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+.main10 .container01 .item-content button:hover{
+    border: 2px solid black;
+}
+.main10 .container01 .item-content p{
+    font-size: 20px;
+}
+.main10 .container01 .item-content h1{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 5px;
+}
+.main10 .container02 .item .item-content{
+    position: absolute;
+    z-index: 10;
+    top: 6%;
+    left: 5%;
+}
+.main10 .container02 a{
+    color: white;
+}
+.main10 .container02 a:hover{
+    text-decoration: none;
+}
+.main10 .container02 .Items .item-content{
+    position: relative;
+}
+.main10 .container02 .Items .contain1 .item-content{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 3%;
+}
+.main10 .container02 .Items .contain2 .item-content{
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 53%;    
+}
+.main10 .container03{
+    position: relative;
+}
+.main10 .container03 .item-content{
+    position: absolute;
+    z-index: 10;
+    top: 6%;
+    left: 5%;
+}
+.main10 .container03 a{
+    color: black;
+}
+.main10 .container03 a:hover{
+    text-decoration: none;
+}
+.main10 .container03 .item-content h1{
+    font-size: 30px;
+    font-weight: 400;
+}
+.customHr1{
+    margin: 60px 20px;
+    opacity: 0.5;
+}
