@@ -2,8 +2,8 @@ import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Zoom from "react-medium-image-zoom";
-import "react-medium-image-zoom/dist/styles.css";
+import 'react-inner-image-zoom/lib/InnerImageZoom/styles.min.css';
+import InnerImageZoom from 'react-inner-image-zoom';
 import { FaRegStar } from "react-icons/fa";
 import { IoRefreshCircleSharp } from "react-icons/io5";
 import "./SingleProduct.css";
@@ -81,13 +81,7 @@ function SingleProduct() {
               {product.map((ele, i) => {
                 return (
                   <div className="items" key={i}>
-                    <Zoom>
-                      <img
-                        alt="That Wanaka Tree, New Zealand by Laura Smetsers"
-                        src={ele?.image}
-                        width="600"
-                      />
-                    </Zoom>
+                  <InnerImageZoom zoomType='hover' zoomScale='1.4' src={ele.image}/> 
                   </div>
                 );
               })}
