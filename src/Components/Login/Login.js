@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Login.css";
+import { signInWithPopup } from "firebase/auth";
+import { auth, provider } from "../../firebaseConfig";
 
 function Login() {
+  const [user, setUser] = useState(null);
+
+
+  const signInWithGoogle = async () => {
+    try {
+      const result = await signInWithPopup(auth, provider);
+      setUser(result.user);
+      console.log('result==>', result)
+    } catch (error) {
+      console.error("Error signing in with Google", error);
+    }
+  };
   return (
     <React.Fragment>
       <main>
@@ -20,7 +34,7 @@ function Login() {
               <br />
               <input type="Email" placeholder="" className="input" />
             </form>
-            <button>Continue</button>
+            <button onClick={signInWithGoogle}>Continue</button>
           </div>
           <div className="contain02">
             <p>Securing your personal information is our priority.</p>

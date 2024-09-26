@@ -1,15 +1,22 @@
 .product-container{
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     object-fit: contain;
     padding: 10px;
+    overflow: scroll    ;
 }
 .product-container .main-container{
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 50px;
+}
+.product-container .main-container .main-container1{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 .main-container .product-img{
     object-fit: contain;
@@ -17,38 +24,54 @@
     flex-direction: column;
     gap: 20px;
     align-items: center;
+    justify-content: space-around;
 }
 .main-container .product-img .img{
     width: 100px;
-    height: 100px;
+    height: auto;
     object-fit: contain;
 }
 .main-container .product-img .img img{
     width: 100%;
     height: auto;
     object-fit: contain;
+    border-radius: 10px;
+}
+.main-container .product-img .img img:hover{
+    border: 2px solid black;
+    cursor: pointer;
 }
 .main-container .product-main{
     width: 100%;
     height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .main-container .product-main .items{
     width: 100%;
     height: auto;
 }
 .main-container .product-main .product-carousel{
-    width: 600px;
+    width: 720px;
     height: auto;
+    border-radius: 20px;
 }
-.main-container .product-main .product-carousel .items img{
+.main-container .product-main .product-carousel .items InnerImageZoom{
     width: 100%;
     height: auto;
     object-fit: contain;
-    border-radius: 20px;
 }
-.main-container .product-main .product-carousel .items img:hover{
+.main-container .product-main .product-carousel .items InnerImageZoom:hover{
     border: 1px solid black;
     border-radius: 20px;
+}
+.main-container .product-detail{
+     padding: 10px;
+     position: sticky;
+     top: 0;
+     bottom: 0;
+     left: 0;
 }
 .main-container .product-detail .btn{
     gap: 10px;
@@ -108,4 +131,233 @@
 }
 .main-container .product-detail .price p{
     padding-top: 10px;
+}
+.main-container .product-detail .price .cart{
+    padding: 10px;
+    margin-top: 30px;
+    height: 46px;
+    width: 220px;
+    background-color: #3B71DC;
+    color: #fff;
+    text-align: center;
+    border-radius: 30px;
+}
+.main-container .product-detail .price .cart:hover{
+    cursor: pointer;
+    background-color: #1e3f80;
+}
+.main-container .product-detail .size{
+    padding: 10px;
+    background-color: #F8F8F8;
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+.main-container .product-detail .size p b{
+   padding-right: 10px; 
+}
+.main-container .product-detail .size .image{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.main-container .product-detail .size .image .size-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-container .product-detail .size .image .size-img img{
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.main-container .product-detail .size .image .size-img .price{
+    color: green;
+    font-size: small;
+    margin-top: -5px;
+}
+.main-container .product-detail .size .size-chart{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.main-container .product-detail .size .size-chart a{
+    color: black;
+}
+.main-container .product-detail .size .size-chart a:hover{
+    text-decoration: none;
+}
+.main-container .product-detail .size button{
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    background-color: #fff;
+    font-weight: 600;
+}
+.main-container .product-detail .shipping{
+    padding: 10px;
+    background-color: #F8F8F8;
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.main-container .product-detail .shipping .check{
+    text-align: center;
+    padding: 10px 0px;
+}
+.main-container .product-detail .shipping .checkouts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+.main-container .product-detail .shipping .checkouts .options{
+    border: 1px solid black;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 120px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-container .product-detail .shipping .location{
+    border: 1px solid lightcoral;
+    background-color: #FEF9E9;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.main-container .product-detail .shipping .address{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.main-container .product-detail .shipping .address a{
+    font-weight: 600;
+    text-decoration: underline;
+}
+.main-container .product-detail .shipping .address a:hover{
+    text-decoration: none;
+    color: #1e3f80;
+}
+.main-container .product-detail .shipping .custom{
+    margin: 0px 10px;
+}
+.main-container .product-detail .shipping .detail{
+    padding: 10px;
+}
+.main-container .product-detail .shipping .detail .seller{
+    display: flex;
+    padding-top: 10px;
+    gap: 30px;
+    align-items: center;
+}
+.main-container .product-detail .shipping .detail .seller .span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.main-container .product-detail .shipping .detail .seller .span p{
+    color: blue;
+    font-weight: 600;
+}
+.main-container .product-detail .shipping .detail .rating{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+.main-container .product-detail .shipping .detail .rating p{
+    margin-left: 20px;
+}
+.main-container .product-detail .shipping .detail .info{
+    padding-top: 20px;
+    color: black;
+}
+.main-container .product-detail .shipping .detail .return{
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.main-container .product-detail .shipping .detail .return .return1{
+    display: flex;
+    gap: 10px;
+}
+.main-container .product-detail .shipping .detail .return .return1 a{
+    text-decoration: underline;
+    color: black;
+}
+.main-container .product-detail .shipping .detail .return .return1 a:hover{
+    color: #1e3f80;
+    text-decoration: none;
+}
+.main-container .product-detail .shipping .Add{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main-container .product-detail .shipping .Add .add1{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    gap: 10px;
+}
+.main-container .product-detail .shipping .Add .add1 a{
+    color: black;
+}
+.main-container .product-detail .shipping .Add .add1 a:hover{
+    text-decoration: none;
+}
+.product-main{
+    padding: 10px;
+}
+.product-main1 .hrCustom{
+    margin: 10px 0px;
+}
+.main-container .main-contain01 .product-main1 h2{
+    padding-top: 20px;
+}
+.main-container .main-contain01 .product-main1 h5{
+    font-size: 15px;
+    font-weight: 400;
+    padding: 15px 20px;
+}
+.main-container .main-contain01 .product-main1 h6{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0px 20px;
+}
+.main-container .main-contain01 .product-main1 ul{
+    font-size: 14px;
+    font-weight: 300;
+    padding: 20px 40px;
+}
+.main-container .main-contain01 .product-main1 p{
+    padding: 10px 20px;
+}
+.main-container .main-contain01 .product-main1 p b{
+    font-weight: 600;
+}
+.main-container .main-contain01 .product-main1 p a{
+    padding-left: 10px;
+    color: black;
+}
+.main-container .main-contain01 .product-main1 .feature{
+    padding: 10px 20px;
+}
+.main-container .main-contain01 .product-main1 .feature p{
+    margin-left: -20px;
 }
