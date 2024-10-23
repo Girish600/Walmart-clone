@@ -13,12 +13,18 @@ import { IoDownloadOutline } from "react-icons/io5";
 import { CiGift } from "react-icons/ci";
 import { IoGridOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import { useAuth } from "../../AuthContext";
 import "./Header.css";
+import { signOut } from "firebase/auth";
+import { auth, provider } from "../../firebaseConfig";
 
 function Header() {
   const [showcart, setshowcart] = useState(false);
   const [showcart1, setshowcart1] = useState(false);
   const [showaccount, setshowaccount] = useState(false);
+  const {currentUser}= useAuth();
+  console.log("currentUser==>", currentUser);
+  
   return (
     <React.Fragment>
       <header className="mainheader">
@@ -47,7 +53,20 @@ function Header() {
               <h5>My Items</h5>
             </div>
           </div>
-          <div
+          {currentUser ?( <div
+            className="accounts"
+          
+          >
+            {/* <CiUser size={20} /> */}
+            {currentUser?.photoURL && (<img src={currentUser?.photoURL} lazy="loading"/>)}
+            <div>
+              <p>{currentUser?.displayName}</p>
+              <h5 onClick={async()=>{
+                await signOut(auth,provider);
+                alert("Successfully logout")
+              }}>Logout</h5>
+            </div>
+          </div>):(<div
             className="accounts"
             onClick={() => setshowaccount(!showaccount)}
           >
@@ -56,9 +75,10 @@ function Header() {
               <p>Sign in</p>
               <h5>Accounts</h5>
             </div>
-          </div>
+          </div>)}
+          
           <div className="cart">
-            <BsCart4 size={22} />
+          <Link to='/Cart'><BsCart4 style={{color:'white'}} size={22} /></Link>
             <h5>$0.00</h5>
           </div>
         </nav>
@@ -184,6 +204,7 @@ function Header() {
           </div>
         </div>
       )}
+
       {showaccount && (
         <div
           className="cart-transperency"
